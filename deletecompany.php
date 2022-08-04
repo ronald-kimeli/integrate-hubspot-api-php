@@ -8,8 +8,6 @@ $dotenv->load();
 $curl = curl_init();
 $token = $_ENV['API_KEY'];
 $id = 5968895978;
-
-
 $url = "https://api.hubapi.com/crm/v3/objects/companies/$id";
 
     curl_setopt ($curl,CURLOPT_URL, $url);
